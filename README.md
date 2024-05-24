@@ -1,14 +1,8 @@
-<div align="center">
-
 # RustLoader
 
-![RustLoader Logo](assets/rustloader.jpg)
-
-### Loader en Rust
-
-</div>
-
----
+<p align="center">
+  <img src="assets/rustloader.jpg">
+</p>
 
 ## 📜 Descripción
 **RustLoader** es un sofisticado cargador de malware desarrollado en Rust, orientado a la investigación y la demostración de técnicas de evasión y ejecución sigilosa. El diseño está centrado en la inyección y ejecución de shellcode cifrado, manejando la memoria de forma directa para evitar las APIs de alto nivel que son fácilmente monitoreables.
@@ -35,8 +29,9 @@ src/
 ├── patch.rs         - Parchea procesos en ejecución para técnicas de persistencia.
 ├── shellcode.rs     - Carga y ejecuta el shellcode.
 └── utils.rs         - Utilidades como simulación de clics y esperas.
+    
 ```
-
+    
 ## ⚠️ Disclaimer
 
 Este código está destinado exclusivamente para uso educativo y de investigación. No es adecuado para uso en producción ni para realizar actividades ilegales. Los desarrolladores declinan toda responsabilidad por el uso indebido de este software.
