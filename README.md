@@ -39,12 +39,3 @@ Este código está destinado exclusivamente para uso educativo y de investigaci�
 
 
 
-
-```html
-<head>
-  <meta property="og:title" content="RustLoader" />
-  <meta property="og:description" content="Cargador de malware en Rust orientado a la investigación y demostración de técnicas de evasión y ejecución sigilosa." />
-  <meta property="og:image" content="https://your-repo-link/assets/rustloader.jpg" />
-  <meta property="og:url" content="[https://your-repo-link](https://github.com/3xploit666/rustloader)" />
-</head>
-```
