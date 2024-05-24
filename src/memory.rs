@@ -1,5 +1,4 @@
 use std::arch::asm;
-use winapi::ctypes::c_void;
 
 extern "stdcall" {
     fn HeapCreate(options: u32, initial_size: usize, max_size: usize) -> *mut std::ffi::c_void;

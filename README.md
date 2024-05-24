@@ -1,23 +1,42 @@
+<div align="center">
+
 # RustLoader
 
 ![RustLoader Logo](assets/rustloader.jpg)
 
+### Loader en Rust
 
-🦀🦀
-### Descripción del Proyecto
-RustLoader es un proyecto avanzado en Rust que implementa un cargador de shellcode utilizando la API de Windows y ensamblador en línea. Este proyecto se enfoca en técnicas de bajo nivel para la manipulación de memoria y el parcheo de procesos, con características adicionales de anti-depuración y monitoreo de clics del ratón.
+</div>
 
-### Características
-- **Cargador de Shellcode:** Ejecuta shellcode desde la memoria después de descifrarlo.
-- **Operaciones de Memoria de Bajo Nivel:** Utiliza Rust y ensamblador en línea para la asignación y manipulación precisa de memoria.
-- **Parcheo de Procesos:** Aplica parches a funciones críticas del sistema utilizando `WriteProcessMemory`.
-- **Anti-Debugging:** Detecta la presencia de depuradores y termina el proceso si se encuentra uno.
-- **Detección de Clics del Ratón:** Monitorea y responde a los clics del ratón utilizando la función `GetAsyncKeyState` de la API de Windows.
+---
 
-### Requisitos del Sistema
-- Sistema Operativo: Windows
-- Lenguaje de Programación: Rust
-- Herramientas Adicionales: Cargadores y herramientas de desarrollo de Rust
+## 📜 Descripción
+**RustLoader** es un sofisticado cargador de malware desarrollado en Rust, orientado a la investigación y la demostración de técnicas de evasión y ejecución sigilosa. El diseño está centrado en la inyección y ejecución de shellcode cifrado, manejando la memoria de forma directa para evitar las APIs de alto nivel que son fácilmente monitoreables.
 
-⚠️ DISCLAIMER
-These tools and scripts are provided for educational purposes only. Unauthorized testing of networks and systems is illegal. Always obtain permission before attempting any penetration testing.
+## 🌟 Características Destacadas
+- **Detección de Depuradores**: Implementa técnicas avanzadas para detectar depuradores y prevenir ejecución en entornos monitoreados.
+- **Simulación de Interacción Humana**: Requiere múltiples clics de mouse para simular la presencia y interacción de un usuario antes de proceder.
+- **Gestión Avanzada de Memoria**: Gestiona la memoria con llamadas a bajo nivel para asignación y borrado, minimizando la visibilidad ante herramientas de monitoreo.
+- **Ejecución de Shellcode Cifrado**: Ejecuta shellcode cifrado directamente desde la memoria, usando técnicas de desencriptación en tiempo real.
+
+## 🔧 Prerrequisitos
+![Rust Badge](https://img.shields.io/badge/rust-stable-brightgreen.svg)
+![Windows Badge](https://img.shields.io/badge/windows-10-blue.svg)
+
+- **Rust**: Última versión estable.
+- **Microsoft Visual C++ Build Tools**: Esencial para la compilación en Windows.
+
+## 📂 Estructura del Proyecto
+```plaintext
+src/
+│
+├── main.rs          - Inicia los procedimientos de seguridad y carga del malware.
+├── memory.rs        - Funciones de manipulación de memoria.
+├── patch.rs         - Parchea procesos en ejecución para técnicas de persistencia.
+├── shellcode.rs     - Carga y ejecuta el shellcode.
+└── utils.rs         - Utilidades como simulación de clics y esperas.
+```
+
+## ⚠️ Disclaimer
+
+Este código está destinado exclusivamente para uso educativo y de investigación. No es adecuado para uso en producción ni para realizar actividades ilegales. Los desarrolladores declinan toda responsabilidad por el uso indebido de este software.

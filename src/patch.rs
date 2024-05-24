@@ -1,6 +1,7 @@
 use std::arch::asm;
 use std::mem;
 use std::mem::transmute;
+use std::ptr::null_mut;
 use winapi::um::libloaderapi::{GetProcAddress, LoadLibraryA};
 use winapi::um::memoryapi::WriteProcessMemory;
 use winapi::ctypes::c_void;
